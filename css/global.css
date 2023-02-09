@@ -1,17 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 :root {
+    --white: #eeeeee;
+    --black: #1c1c1c;
+    --light-grey: #fafafa;
     --primary: #0167ff;
-    --primary-faded: #0167ff70;
-    --secondary: #01c9f5;
-    --background: #12141d;
-    --background-accent: #1e2029;
-    --white: #fff;
-    --light-grey: #f5f5f5;
-    --black: #000;
 
-    --height: 70vh;
-
+    --border-radius: 26px;
     --boxShadow: 0px 3px 6px #00000029;
     --overlay: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 24%, rgba(0,0,0,0) 70%);
     --overlayVertical: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 24%, rgba(0,0,0,0) 70%);
@@ -57,10 +52,11 @@ h4 {
 a {
     color: var(--primary);
     text-decoration: none;
+    transition: var(--transition);
 }
 
 a:hover {
-
+    transition: var(--transition);
 }
 
 p {
@@ -69,10 +65,79 @@ p {
 
 ul li,
 ol li {
-
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 img {
     width: 100%;
     height: auto;
+}
+
+.btn {
+    color: var(--white);
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    transition: var(--transition);
+}
+
+.btn.ghost-btn {
+    color: var(--primary);
+    background-color: transparent;
+    border: 1px solid var(--primary);
+}
+
+.btn:hover {
+    transition: var(--transition);
+}
+
+.btn.ghost-btn:hover {
+    color: var(--white);
+    background-color: var(--primary);
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    margin: 40px auto;
+}
+
+.section .row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.section .row.flex-col {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.section .row.reverse {
+    flex-flow: row-reverse wrap;
+}
+
+.section .row.flex-col.center {
+    align-items: center;
+}
+
+.section .row .col {
+    flex: 1 0 400px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
 }

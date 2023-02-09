@@ -1,0 +1,27 @@
+.wrapper .card {
+    flex: 0 1 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: var(--border-radius);
+    box-shadow: var(--boxShadow);
+}
+
+.wrapper .card img {
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+}
+
+.wrapper .card h3 {
+    font-size: 26px;
+}
+
+.wrapper .card .btn.ghost-btn {
+    
+}
+
+.wrapper .card .btn.ghost-btn:hover {
+    
+}
