@@ -76,9 +76,15 @@ img {
 }
 
 .btn {
+    width: fit-content;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
     color: var(--white);
     background-color: var(--primary);
     border: 1px solid var(--primary);
+    border-radius: 9px;
+    padding: 10px 15px;
     transition: var(--transition);
 }
 
@@ -89,6 +95,8 @@ img {
 }
 
 .btn:hover {
+    cursor: pointer;
+    transform: scale(1.05);
     transition: var(--transition);
 }
 
@@ -101,6 +109,14 @@ img {
     display: flex;
     flex-direction: row;
     margin: 40px auto;
+}
+
+.section.black {
+    background-color: var(--black);
+}
+
+.section.grey {
+    background-color: var(--light-grey);
 }
 
 .section .row {
@@ -134,10 +150,11 @@ img {
 
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .wrapper {
     display: flex;
     flex-flow: row wrap;
-    gap: 40px;
+    gap: 20px;
 }
