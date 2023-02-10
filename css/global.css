@@ -186,6 +186,13 @@ img {
     margin: 0;
 }
 
+.header.active {
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+    transition: background-color 200ms linear;
+}
+
 .header .row,
 .footer .row {
     justify-content: space-between;
@@ -260,4 +267,55 @@ img {
 .footer.section .legal p {
     color: var(--white);
     opacity: 0.7;
+}
+
+.contact.section {
+    margin: 0;
+}
+
+.section.contact .form-wrapper {
+    display: flex;
+    width: 100%;
+    padding: 30px;
+}
+
+.section.contact .form-wrapper form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+}
+
+.section.contact .form-wrapper input {
+    color: var(--black);
+    flex: 1;
+    width: 100%;
+    padding: 16px;
+    background-color: hsla(0, 0%, 100%, 0.1);
+    border: 1px solid var(--primary);
+    border-radius: 12px;
+    height: 60px;
+    outline: none;
+    font-size: 18px;
+    transition: border-bottom 200ms ease;
+}
+
+.section.contact .form-wrapper input:focus {
+    transition: border-bottom 200ms ease;
+    border: 3px solid var(--primary);
+}
+
+.section.contact .form-wrapper .btn {
+    color: var(--white);
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+    transition: border-bottom 200ms ease;
+    transition: var(--transition);
+    margin-top: 20px;
+    border-radius: 12px;
+}
+
+.section.contact .form-wrapper .btn:hover {
+    transform: scale(1.02);
 }
