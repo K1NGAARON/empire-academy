@@ -1,13 +1,15 @@
 .wrapper {
     gap: 40px;
+    justify-content: center;
 }
 
 .wrapper .card {
-    flex: 0 1 350px;
+    flex: 1 0;
 
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    gap: 10px;
 
     border-radius: var(--border-radius);
     box-shadow: var(--boxShadow);
@@ -18,8 +20,22 @@
     border-top-left-radius: var(--border-radius);
 }
 
-.wrapper .card h3 {
-    font-size: 26px;
+.wrapper .card h5 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.wrapper .card p {
+    margin-bottom: 30px;
+}
+
+.wrapper .card h5,
+.wrapper .card p {
+    padding: 0 30px;
+}
+
+.wrapper .card .btn {
+    margin: auto 30px 30px 30px;
 }
 
 .wrapper .card .btn.ghost-btn {

@@ -108,7 +108,7 @@ img {
 .section {
     display: flex;
     flex-direction: row;
-    margin: 40px auto;
+    margin: 60px auto;
 }
 
 .section.black {
