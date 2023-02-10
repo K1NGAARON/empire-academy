@@ -1,5 +1,5 @@
 // STICKY LARGE MENU
-$(document).scroll(function () {
+$(document).scroll(function() {
     const header = $('.header');
     const logo = $('.header .logo');
 
