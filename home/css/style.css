@@ -27,15 +27,16 @@
 }
 
 .services.section .wrapper .container {
-
+    flex: 1 0;
+    border-radius: var(--border-radius);
 }
 
 .services.section .wrapper .container img {
-    
+    border-radius: var(--border-radius);
 }
 
 .services.section .wrapper .container .content {
-    
+    display: none;
 }
 
 .services.section .wrapper .container:hover .content {
