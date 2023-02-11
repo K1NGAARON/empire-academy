@@ -3,7 +3,7 @@
 :root {
     --white: #eeeeee;
     --black: #1c1c1c;
-    --light-grey: #fafafa;
+    --light-grey: #ececec;
     --primary: #0167ff;
 
     --border-radius: 26px;
@@ -126,7 +126,7 @@ img {
     align-items: center;
     gap: 60px;
 
-    max-width: 1400px;
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
 }

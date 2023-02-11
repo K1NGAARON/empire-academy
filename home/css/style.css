@@ -28,7 +28,10 @@
 
 .services.section .wrapper .container {
     flex: 1 0;
+    position: relative;
+    color: var(--white);
     border-radius: var(--border-radius);
+    transition: var(--transition);
 }
 
 .services.section .wrapper .container img {
@@ -37,20 +40,28 @@
 
 .services.section .wrapper .container .content {
     display: none;
+    flex-direction: column;
+    gap: 10px;
+
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
 }
 
 .services.section .wrapper .container:hover .content {
-    
-}
-
-.services.section .wrapper .container:hover img {
-    
+    display: flex;
 }
 
 .services.section .wrapper .container h5 {
-    
+    font-weight: 600;
+    font-size: 24px;
 }
 
-.services.section .wrapper .container p {
-    
+.services.section .wrapper .container .btn.ghost-btn {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.services.section .wrapper .container .btn.ghost-btn:hover {
+    border-color: var(--primary);
 }
