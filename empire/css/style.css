@@ -1,0 +1,65 @@
+.wrapper {
+    gap: 60px;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.wrapper .event {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    gap: 40px;
+    padding: 30px;
+
+    border: 1px solid var(--light-grey);
+    border-radius: var(--border-radius);
+}
+
+.wrapper .event-item:nth-child(1) {
+    width: fit-content;
+}
+
+.wrapper .event-item:nth-child(2) {
+    width: 60%;
+}
+
+.wrapper .event .date-wrapper {
+    color: var(--white);
+    background-color: var(--primary);
+    padding: 20px;
+    border-radius: var(--border-radius);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .event .date-wrapper .month {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.wrapper .event .date-wrapper .day {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.wrapper .event h5 {
+    font-weight: 600;
+    font-size: 26px;
+}
+
+.wrapper .event .location {
+    color: var(--primary);
+    transition: var(--transition);
+    margin-bottom: 20px;
+}
+
+.wrapper .event .location:hover {
+    text-decoration: underline;
+    transition: var(--transition);
+    cursor: pointer;
+}
