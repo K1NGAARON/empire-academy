@@ -129,6 +129,7 @@ img {
     max-width: 1600px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 30px;
 }
 
 .section .row.flex-col {
@@ -196,7 +197,7 @@ img {
 .header .row,
 .footer .row {
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 20px 30px;
 }
 
 .header nav {
@@ -249,6 +250,18 @@ img {
     background-color: var(--white);
     border-color: var(--white);
     transition: var(--transition);
+}
+
+.header.active .topnav-content-sm svg {
+    fill: var(--white);
+}
+
+.header .topnav-content-sm {
+    display: none;
+}
+
+.header .small-menu-wrapper {
+    display: none;
 }
 
 .footer.section {
@@ -318,4 +331,43 @@ img {
 
 .section.contact .form-wrapper .btn:hover {
     transform: scale(1.02);
+}
+
+
+@media (max-width: 880px) {
+    .header.section {
+        flex-direction: column;
+    }
+
+    .header .row {
+        display: none;
+    }
+
+    .header .topnav-content-sm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 30px;
+        width: 100%;
+    }
+
+    .header .small-menu-content {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 30px;
+        background-color: var(--white);
+    }
+
+    .header .topnav-content-sm svg {
+        fill: var(--white);
+        width: 25px;
+    }
+
+    .header .topnav-content-sm svg:hover {
+        cursor: pointer;
+    }
+
+    .section .row {
+        gap: 20px;
+    }
 }

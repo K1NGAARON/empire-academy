@@ -47,3 +47,9 @@
     color: var(--white);
     background-color: var(--black);
 }
+
+@media (max-width: 560px) {
+    .wrapper .card {
+        flex: 1 0 100%;
+    }
+}

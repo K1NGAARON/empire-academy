@@ -65,3 +65,23 @@
 .services.section .wrapper .container .btn.ghost-btn:hover {
     border-color: var(--primary);
 }
+
+@media (max-width: 560px) {
+    .banner.section,
+    .banner.section .row {
+        min-height: 60vh;
+    }
+
+    .banner.section h1, 
+    .banner.section p {
+        max-width: 100%;
+    }
+
+    .banner.section h1 {
+        font-size: 46px;
+    }
+
+    .services.section .wrapper .container {
+        flex: 1 0 100%;
+    }
+}
