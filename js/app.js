@@ -1,7 +1,6 @@
 // STICKY LARGE MENU
 $(document).scroll(function() {
     const header = $('.header');
-    const logo = $('.header .logo');
 
     if ($(this).scrollTop() > header.height()) {
         header.addClass('active');
