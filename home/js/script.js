@@ -8,20 +8,20 @@ const socialProofContent = [
 const servicesTarget = document.querySelector('#servicesHolder');
 const servicesContent = [
     {
-        title: "Service 1",
-        body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+        title: "The Academy",
+        body: "1-op-1 coaching programs & workshops.",
         img: '/home/assets/img/service1.jpg',
         url: '',
     },
     {
-        title: "Service 2",
-        body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+        title: "Record my mix",
+        body: "Op basis van jouw wensen, neem ik een studio mix voor je op.",
         img: '/home/assets/img/service2.jpg',
         url: '',
     },
     {
-        title: "Service 3",
-        body: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+        title: "Book me for your event",
+        body: "Beschikbaar als dj voor jouw event!",
         img: '/home/assets/img/service3.jpg',
         url: '',
     },
@@ -68,7 +68,7 @@ function createServices(e) {
                         ${servicesContent[i].body}
                     </p>
                     <a class="btn ghost-btn" href="${servicesContent[i].url}">
-                        Read more
+                        Lees meer
                     </a>
                 </div>
             <div>

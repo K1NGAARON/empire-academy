@@ -1,3 +1,7 @@
+.wrapper.buttons {
+    gap: 20px;
+}
+
 .services.section .wrapper .container {
     flex: 1 0;
     position: relative;
