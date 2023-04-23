@@ -1,5 +1,11 @@
+.services .wrapper {
+    justify-content: flex-start;
+}
+
 .services .wrapper .item {
-    flex: 1 0 30%;
+    flex: 0 1 30%;
+    display: flex;
+    flex-direction: column;
     border-radius: var(--border-radius);
     box-shadow: var(--boxShadow);
 }
@@ -40,8 +46,9 @@
     margin-bottom: 10px;
 }
 
-.services .wrapper .item .content a {
-    margin-top: 20px;
+.services .wrapper .item a {
+    margin-top: auto;
+    padding: 0 30px 20px 30px;
 }
 
 @media (max-width: 560px) {
