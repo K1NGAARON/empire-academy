@@ -1,9 +1,39 @@
+.section.filter {
+    margin: unset;
+    padding: 60px;
+}
+
+.filter .wrapper {
+    align-items: center;
+}
+
+.filter .wrapper label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.filter .wrapper select {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border: 1px solid var(--black);
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.filter .wrapper select:focus-visible {
+    outline: none;
+    outline-offset: 0;
+    border: 2px solid var(--primary);
+    transition: var(--transition);
+}
+
 .services .wrapper {
     justify-content: flex-start;
 }
 
 .services .wrapper .item {
-    flex: 1 0 30%;
+    flex: 0 1 30%;
     display: flex;
     flex-direction: column;
     border-radius: var(--border-radius);
