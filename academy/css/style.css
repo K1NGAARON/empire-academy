@@ -43,3 +43,9 @@
 .services .wrapper .item .content a {
     margin-top: 20px;
 }
+
+@media (max-width: 560px) {
+    .services .wrapper .item {
+        flex: 1 0 40%;
+    }
+}
