@@ -1,0 +1,45 @@
+.services .wrapper .item {
+    flex: 1 0 30%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--boxShadow);
+}
+
+.services .wrapper .item img {
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+}
+
+.services .wrapper .item .content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+}
+
+.services .wrapper .item .content h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.services .wrapper .item .content .price {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.services .wrapper .item .content .label {
+    color: var(--white);
+    font-weight: 600;
+    background-color: var(--primary);
+    border-radius: var(--border-radius);
+    padding: 5px 10px;
+}
+
+.services .wrapper .item .content .content-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.services .wrapper .item .content a {
+    margin-top: 20px;
+}
