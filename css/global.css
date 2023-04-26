@@ -461,6 +461,12 @@ cursor: pointer;
     opacity: 0.5;
 }
 
+@media (max-width: 560px) {
+    .section .row .col {
+        flex: 1 0 100%;
+    }
+}
+
 @media (max-width: 880px) {
     .header.section {
         flex-direction: column;
